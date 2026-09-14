@@ -1,0 +1,19 @@
+{
+  "name": "02-weather",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "bun test --isolate",
+    "test:watch": "bun test --watch",
+    "build": "bun run test && bun build --compile src/index.ts --outfile weather",
+    "start": "bun run src/index.ts",
+    "dev": "bun run src/index.ts --watch"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
